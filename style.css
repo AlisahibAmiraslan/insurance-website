@@ -447,7 +447,7 @@ footer .contact i {
 
 .container-dropdown {
   position: relative;
-  border-bottom: 1px solid #6f6f6f;
+  border-bottom: 1px solid #6f6f6f !important;
 }
 
 .container-dropdown a {
@@ -460,15 +460,9 @@ footer .contact i {
 .container-dropdown [data-toggle="dropdown"] {
   display: block;
   color: white;
-  /* background: rgb(17, 111, 255);
-  box-shadow: 0 1px 0 rgb(17, 111, 255) inset, 0 -1px 0 rgb(17, 111, 255) inset; */
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
   padding: 10px;
 }
-
-/* .container-dropdown [data-toggle="dropdown"]:hover {
-  background: rgb(17, 111, 255);
-} */
 
 .container-dropdown [data-toggle="dropdown"]:before {
   position: absolute;
@@ -476,10 +470,12 @@ footer .contact i {
   content: '\25BC';
   font-size: 0.7em;
   color: black;
+  user-select: none;
   top: 13px;
   right: 10px;
   transform: rotate(0deg);
   transition: transform 0.6s;
+  z-index: 0;
 }
 
 .container-dropdown>.container-dropdown-menu {
@@ -500,7 +496,7 @@ footer .contact i {
 
 .container-dropdown>.container-dropdown-menu li a {
   display: block;
-  color: #6f6f6f;
+  color: #6f6f6f !important;
   background: #EEE;
   box-shadow: 0 1px 0 white inset, 0 -1px 0 #d5d5d5 inset;
   text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.3);
