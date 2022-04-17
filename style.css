@@ -62,7 +62,6 @@ h2 {
 
 .snip1490 *,
 .snip1490 *:before {
-  -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
 
@@ -584,11 +583,11 @@ footer .contact i {
 /* media */
 @media only screen and (max-width:990px) {
   .navbar-menu {
-    background-color: rgba(0, 0, 0, .9);
+    background-color: rgb(243, 251, 255);
   }
 
   .snip1490 a {
-    color: white !important;
+    color: black !important;
   }
 
   .footer-main-menu {

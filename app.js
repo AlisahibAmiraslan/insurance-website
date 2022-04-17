@@ -5,9 +5,9 @@ const navLink = document.querySelectorAll(".nav-link");
 document.addEventListener('scroll', () => {
   var scroll_position = window.scrollY;
   if (scroll_position > 250) {
-    nav.style.backgroundColor = 'rgba(0, 0, 0, .8)';
+    nav.style.backgroundColor = 'rgb(243, 251, 255)';
     for (i = 0; i < navLink.length; i++) {
-      navLink[i].style.color = "white";
+      navLink[i].style.color = "black";
     }
   } else {
     nav.style.backgroundColor = 'transparent';
