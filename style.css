@@ -206,18 +206,6 @@ a.blackColor {
   display: none;
 }
 
-.images+p.active1 {
-  display: block;
-}
-
-.images+p.active2 {
-  display: block;
-}
-
-.images+p.active3 {
-  display: block;
-}
-
 #kapsayici {
   max-width: 900px;
   position: relative;

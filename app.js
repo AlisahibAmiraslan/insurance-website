@@ -19,33 +19,14 @@ document.addEventListener('scroll', () => {
 
 // navbar
 
-const infoBtn1 = document.querySelector(".info1");
-const lorem1 = document.querySelector(".lorem1");
-
-infoBtn1.addEventListener("click", function (e) {
-  lorem1.classList.toggle("active1");
-  infoBtn1.classList.toggle("blackColor");
-  e.preventDefault();
-});
-
-
-const infoBtn2 = document.querySelector(".info2");
-const lorem2 = document.querySelector(".lorem2");
-
-infoBtn2.addEventListener("click", function (e) {
-  lorem2.classList.toggle("active2");
-  infoBtn2.classList.toggle("blackColor");
-  e.preventDefault();
-});
-
-
-const infoBtn3 = document.querySelector(".info3");
-const lorem3 = document.querySelector(".lorem3");
-
-infoBtn3.addEventListener("click", function (e) {
-  lorem3.classList.toggle("active3");
-  infoBtn3.classList.toggle("blackColor");
-  e.preventDefault();
+$(document).ready(function () {
+  var toggleAdd = $(".slideToggle");
+  $(".lorems").css("display", "none");
+  toggleAdd.click(function (e) {
+    toggleAdd.find(".lorems").slideUp(400);
+    $(this).find(".lorems").slideToggle(400);
+    e.preventDefault();
+  })
 });
 
 
