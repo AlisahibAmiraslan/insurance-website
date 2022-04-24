@@ -54,7 +54,6 @@ function galeri() {
   info_content[index].classList.add("aktif");
   kutucuk[index].classList.add("aktiflist")
 
-  console.log(index);
 }
 
 function ileri() {
